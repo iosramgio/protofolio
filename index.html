@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+  </head>
+
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Anggio Marsoni</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about" class="tombol">About</a></li>
+          <li><a href="#experience" class="tombol" >Experience</a></li>
+          <li><a href="#projects" class="tombol">Projects</a></li>
+          <li><a href="#sertifikat" class="tombol">Sertifikat</a></li>
+          <li><a href="#contact" class="tombol">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Anggio Marsoni</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#sertifikat" onclick="toggleMenu()">Sertifikat</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="background-video">
+        <video autoplay loop muted playsinline>
+          <source src="assets/853919-hd_1920_1080_25fps.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+      </div>      
+      <div class="section__pic-container">
+        <img src="./assets/Desain tanpa judul (9).png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hallo, Saya</p>
+        <h1 class="title">Anggio Marsoni</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="assets/icons8-linkedin-500.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="assets/icons8-github-96.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/iosramgio'"
+          />
+          <img
+            src="assets/icons8-ig-500.png"
+            alt="My Instagram profile"
+            class="icon"
+            onclick="location.href='https://instagram.com/iomrsn'"
+          />
+        </div>
+      </div>
+    </section>
+    
+    <!-- about -->
+    <section id="about">
+      <p class="section__text__p1">Ketahui Lebih Lanjut</p>
+      <h1 class="title">Tentang Saya</h1>
+      <div class="section-container">
+        <div class="section__pic-containers">
+          <img
+            src="./assets/fotogio2.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="assets/icons8-profiles-100.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3 class="title1">Pengalaman</h3>
+              <p>0+ Tahun <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="assets/icons8-graduation-cap-90.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3 class="title1">Pendidikan</h3>
+              <p>Universitas Pamulang<br />M.Sc. Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Halo! Saya adalah seorang mahasiswa berusia 20 tahun di Universitas Pamulang, yang sedang mengeksplorasi berbagai aspek teknologi modern dan bagaimana itu membentuk dunia kita. Dengan rasa ingin tahu yang besar, saya terus menggali pengetahuan di bidang cloud computing, pengembangan aplikasi, dan keamanan data.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="assets/icons8-double-down-64.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <!-- experience -->
+    <section id="experience">
+      <p class="section__text__p1">Jelajahi Saya</p>
+      <h1 class="title">Pengalaman</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="assets/icons8-check-100.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/icons8-check-100.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/icons8-check-100.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/icons8-check-100.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/icons8-check-100.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/icons8-check-100.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="assets/icons8-check-100.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/icons8-check-100.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/icons8-check-100.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/icons8-check-100.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="assets/icons8-double-down-64.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <!-- project -->
+    <section id="projects">
+      <p class="section__text__p1">Telusuri Terbaru Saya</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/projecLoginnn.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Form Login</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-4"
+                onclick="location.href='https://github.com/iosramgio/formLogin'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-3 "
+                onclick="location.href='form-login/formlogin.html'"
+              > 
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/kalulator.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Calculator</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-4"
+                onclick="location.href='https://github.com/iosramgio/calculator/tree/main/kalkulator'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-3 "
+                onclick="location.href='calculator-main/calculator.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ProjectAdmin.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Dasboard Admin</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-4"
+                onclick="location.href='https://github.com/iosramgio/dasboard-adminanggio'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-3"
+                onclick="location.href='dasboardAdmin/dasboard-admin.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="assets/icons8-double-down-64.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#sertifikat'"
+      />
+    </section>
+
+    
+    <!-- sertifikat -->
+    <section id="sertifikat">
+      <p class="section__text__p1">Sertifikat Saya</p>
+      <h1 class="title">Sertifikat</h1>
+      <div class="sertifikat-container ">
+        <div class="sertifikat-tombol">
+          <div class="slider-container">
+            <a href="https://www.sololearn.com/certificates/CC-XMERBESX" target="_blank">
+                <img class="slider-image" src="assets/sertifikathtml.png" alt="Gambar 1">
+            </a>
+            <a href="https://www.sololearn.com/certificates/CC-XMERBESX" target="_blank">
+                <img class="slider-image" src="assets/sertifikatcss.png" alt="Gambar 2">
+            </a>
+            <a href="https://www.sololearn.com/certificates/CC-XMERBESX" target="_blank">
+                <img class="slider-image" src="assets/sertifikatcss.png" alt="Gambar 2">
+            </a>
+            <a href="https://www.sololearn.com/certificates/CC-XMERBESX" target="_blank">
+                <img class="slider-image" src="assets/sertifikatcss.png" alt="Gambar 2">
+            </a>
+           
+            
+          </div>
+            <a class="prev btn btn-color-2" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next btn btn-color-2" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+
+        <div class="image-description">
+          <h2 id="image-title">Judul Gambar</h2>
+          <p id="image-text">Deskripsi gambar akan muncul di sini.</p>
+      </div>
+  
+      <div class="slider-list-container">
+          <ul class="slider-list">
+              <li class="slider-item" onclick="jumpToSlide(0)"></li>
+              <li class="slider-item" onclick="jumpToSlide(1)"></li>
+              <li class="slider-item" onclick="jumpToSlide(2)"></li>
+              <li class="slider-item" onclick="jumpToSlide(3)"></li>
+          </ul>
+      </div>
+
+      </div>
+      <img
+        src="assets/icons8-double-down-64.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <!-- sertifikat -->
+    
+    <!-- kontak -->
+    <section id="contact">
+      <p class="section__text__p1">Hubungi Kami</p>
+      <h1 class="title">Kontak Saya</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="assets/icons8-email-250.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="gmail:anggiomarsoni16@gmail.com" class="tombol1">anggiomarsoni16@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="assets/icons8-linkedin-256.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com" class="tombol1">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about" class="tombol">About</a></li>
+            <li><a href="#experience" class="tombol">Experience</a></li>
+            <li><a href="#projects" class="tombol">Projects</a></li>
+            <li><a href="#contact" class="tombol">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Anggio M. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+     
+  </body>
+</html>

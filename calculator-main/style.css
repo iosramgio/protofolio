@@ -1,0 +1,17 @@
+.output input:focus {
+    outline: none;
+}
+.card-body{
+    background-color: rgb(203, 203, 203);
+}
+.input{
+    background-color: white;
+}
+.output{
+    background-color: white;
+    margin: 0;
+    padding: 2;
+}
+.button{
+    background-color: black;
+}
