@@ -4,9 +4,10 @@ const slides = document.getElementsByClassName("slider-image");
 
 // Tambahkan array untuk menyimpan informasi gambar
 const imageInfo = [
-    { title: "Judul Gambar 1", description: "Deskripsi untuk gambar pertama." },
-    { title: "Judul Gambar 2", description: "Deskripsi untuk gambar kedua." },
-    { title: "Judul Gambar 3", description: "Deskripsi untuk gambar ketiga." }
+    { title: "Introduction to HTML" },
+    { title: "Introduction to CSS" },
+    { title: "Introduction to JavaScript" },
+    { title: "JavaScript Intermediate" },
 ];
 
 function setupSlides() {
