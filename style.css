@@ -630,3 +630,85 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* maps */
+#maps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.map-container {
+  width: 80%; /* Sesuaikan ukuran sesuai kebutuhan */
+  max-width: 800px; /* Batas maksimum ukuran */
+  height: 450px; /* Sesuaikan tinggi */
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+/* asdasdas */
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 4rem auto;
+    width: 95%;
+}
+
+h2{
+    font-size: 2.3rem;
+    color: rgb(255, 255, 255);
+}
+.menu{
+    margin: 1.5rem 0;
+}
+.menu a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    background-color: rgb(233, 111, 4);
+    color: #fff;
+    padding: 8px 22px;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.store-item{
+    width: 300px;
+    padding: 1rem;
+}
+.store-item img{
+    width: 100%;
+    display: block;
+    box-shadow: 7px 7px 20px rgba(0,0,0,0.2);
+}
+
+.visible {
+    display: block; /* Show the element when this class is applied */
+  }
+  
+  .hidden {
+    display: none; /* Hide the element when this class is applied */
+  }
